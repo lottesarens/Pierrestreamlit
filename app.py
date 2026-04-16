@@ -16,7 +16,6 @@ from langchain_core.runnables.history import RunnableWithMessageHistory
 # 1. Page Config & UI
 st.set_page_config(page_title="Medical Chatbot", page_icon="🏥")
 st.title("🏥 Medical Assistant (Pierre)")
-st.write("Hello World")
 
 # 2. Environment & State Setup
 load_dotenv()
