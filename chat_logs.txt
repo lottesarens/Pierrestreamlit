@@ -1,0 +1,29 @@
+--- 2026-04-16 10:20:33 ---
+Patiënt: bonjour
+Pierre: ik weet het antwoord niet
+--------------------------------------------------
+
+--- 2026-04-16 10:21:04 ---
+Patiënt: wat is ecirs?
+Pierre: ECIRS staat voor **Endoscopic Combined IntraRenal Surgery**. Het is een kijkoperatie onder algehele narcose waarbij nierstenen via twee toegangswegen worden verwijderd:  
+
+* via de urineleider met een dunne flexibele ureterorenoscoop, en  
+* via een kleine percutane opening in de flank (flankincisie) met een tweede camera en instrumenten.  
+
+Door beide benaderingen kan de arts stenen zowel van binnenuit als rechtstreeks vanuit de nier aanpakken, wat grotere of moeilijk bereikbare stenen efficiënter laat verwijderen.
+
+<br><strong>Bronnen:</strong> 701449_v102021_preventie_nierstenen_highres_zonder_cropmarks.pdf, nierstenen.pdf, ECIRS.pdf, URS.pdf
+--------------------------------------------------
+
+--- 2026-04-16 10:41:51 ---
+Patiënt: Wat is Ecirs?
+Pierre: ECIRS staat voor **Endoscopic Combined IntraRenal Surgery**. Het is een kijkoperatie waarbij nierstenen via twee toegangswegen tegelijk worden behandeld:  
+
+- via de urineleider met een dunne flexibele camera (ureterorenoscoop) en  
+- via een kleine percutane opening in de flank.  
+
+Door deze combinatie kan de arts de steen zowel van binnenuit als rechtstreeks vanuit de nier benaderen, waardoor grotere of moeilijk bereikbare stenen efficiënter kunnen worden verwijderd. De ingreep wordt uitgevoerd onder volledige verdoving (algemene narcose).
+
+**Bronnen:** 701449_v102021_preventie_nierstenen_highres_zonder_cropmarks.pdf, ECIRS.pdf, nierstenen.pdf
+--------------------------------------------------
+
