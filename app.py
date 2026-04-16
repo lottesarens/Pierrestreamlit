@@ -13,6 +13,18 @@ from langchain_core.output_parsers import StrOutputParser
 from langchain_community.chat_message_histories import ChatMessageHistory
 from langchain_core.runnables.history import RunnableWithMessageHistory
 
+#page design
+st.markdown(
+    """
+    <style>
+    .stApp {
+        background-color: #FFD1DC;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 # 1. Page Config & UI
 st.set_page_config(page_title="Medical Chatbot", page_icon="🏥")
 st.title("🏥 Medical Assistant (Pierre)")
