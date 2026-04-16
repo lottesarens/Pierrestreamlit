@@ -45,13 +45,22 @@ def get_rag_chain():
         streaming=True 
     )
 
-    # Question Re-writer (Contextualizer)
     contextualize_prompt = ChatPromptTemplate.from_messages([
-        ("system", "Gegeven de chatgeschiedenis en de laatste gebruikersvraag, "
-                   "formuleer een zelfstandige zoekopdracht. Geef ENKEL de tekst van de zoekopdracht terug."),
-        MessagesPlaceholder("chat_history"),
-        ("human", "{input}"),
+    ("system", (
+        "Je bent een medische terminologie-expert. Je krijgt een chatgeschiedenis en een nieuwe gebruikersvraag. "
+        "Patiënten maken vaak typefouten in complexe termen.\n\n" # (bijv. 'ecris' ipv 'ECIRS', 'protsaat' ipv 'prostaat', 'urologie' ipv 'urologie')
+        "JOUW TAAK:\n"
+        "1. Corrigeer eventuele spelfouten in de vraag.\n"
+        "2. Gebruik de chatgeschiedenis om context toe te voegen (vertaal 'hiervan' of 'die operatie' naar de juiste term).\n"
+        "3. Formuleer een beknopte, foutloze zoekopdracht voor een medische database.\n\n"
+        "Antwoord ENKEL met de gecorrigeerde zoekopdracht, geen extra uitleg."
+    )),
+    MessagesPlaceholder("chat_history"),
+    ("human", "{input}"),
     ])
+
+
+
     question_generator = contextualize_prompt | chat_model | StrOutputParser()
 
     # Formatter
