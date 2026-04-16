@@ -14,6 +14,13 @@ from langchain_community.chat_message_histories import ChatMessageHistory
 from langchain_core.runnables.history import RunnableWithMessageHistory
 
 #page design
+def local_css(file_name):
+    with open(file_name) as f:
+        st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
+
+# Load the CSS file
+local_css("style.css")
+
 st.markdown(
     """
     <style>
@@ -27,7 +34,14 @@ st.markdown(
 
 # 1. Page Config & UI
 st.set_page_config(page_title="Medical Chatbot", page_icon="🏥")
-st.title("🏥 Medical Assistant (Pierre)")
+st.title("🏥 Medical Assistant Pierre")
+
+def local_css(file_name):
+    with open(file_name) as f:
+        st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
+
+# Load the CSS file
+local_css("style.css")
 
 # 2. Environment & State Setup
 load_dotenv()

@@ -1,0 +1,91 @@
+/* Container for the chat area */
+.msg_card_body {
+    overflow-y: auto;
+    background-color: rgba(0,0,0,0.02);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+/* Base styles for all bubbles */
+.msg_cotainer, .msg_cotainer_send {
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 10px 15px;
+    position: relative;
+    font-family: 'sans-serif';
+    font-size: 0.9rem;
+    max-width: 80%;
+}
+
+/* Pierre's (Bot) Bubble */
+.msg_cotainer {
+    margin-left: 10px;
+    border-radius: 20px 20px 20px 0px;
+    background-color: #82ccdd; /* You can change this to a soft grey or light blue */
+    color: black;
+}
+
+/* User's Bubble */
+.msg_cotainer_send {
+    margin-right: 10px;
+    border-radius: 20px 20px 0px 20px;
+    background-color: #f188d6; /* The pink from your HTML */
+    color: white;
+}
+
+/* Avatar styling */
+.user_img_msg {
+    height: 40px;
+    width: 40px;
+    border: 1.5px solid #f188d6;
+    border-radius: 50%;
+}
+
+/* Timestamp styling */
+.msg_time, .msg_time_send {
+    position: absolute;
+    bottom: -18px;
+    color: rgba(0,0,0,0.5);
+    font-size: 10px;
+    width: 100px;
+}
+
+.msg_time { left: 0; }
+.msg_time_send { right: 0; text-align: right; }
+
+/* Suggestion Buttons */
+.suggest-btn {
+    margin: 5px;
+    border-radius: 20px;
+    border: 1px solid #f188d6;
+    color: #f188d6;
+    background: white;
+    padding: 5px 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.suggest-btn:hover {
+    background-color: #f188d6;
+    color: white;
+}
+
+/* Typing Indicator Animation */
+.dot {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    margin-left: 2px;
+    background: #555;
+    border-radius: 50%;
+    animation: blink 1.4s infinite both;
+}
+
+.dot:nth-child(2) { animation-delay: 0.2s; }
+.dot:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes blink {
+    0% { opacity: 0.2; }
+    20% { opacity: 1; }
+    100% { opacity: 0.2; }
+}
