@@ -27,14 +27,34 @@ st.markdown(
     .stApp {
         background-color: #FFD1DC;
     }
+    /* Target the User Icon Container */
+        [data-testimonial="user"] img, 
+        [data-testid="stChatMessageAvatarUser"] {
+            background-color: #AEC6CF !important;
+        }
+
+    /* Target the Assistant Icon Container */
+        [data-testid="stChatMessageAvatarAssistant"] {
+            background-color: #AA336A !important;
+    }
     </style>
     """,
     unsafe_allow_html=True
 )
+col1, col2 = st.columns([5, 1])
+
+with col1:
+    st.title("🏥 Medical Assistant Pierre")
+
+with col2:
+    # link_button is a native Streamlit component for external URLs
+    st.link_button("Uz Urologie", "https://www.uzgent.be/nl/urologie")
+
+st.divider()
 
 # 1. Page Config & UI
 st.set_page_config(page_title="Medical Chatbot", page_icon="🏥")
-st.title("🏥 Medical Assistant Pierre")
+
 
 def local_css(file_name):
     with open(file_name) as f:
